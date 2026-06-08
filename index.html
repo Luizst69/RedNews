@@ -7,157 +7,270 @@
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
 body{
-    background:#e5e5e5;
+background:#f2f2f2;
+}
+
+.topbar{
+background:#c40000;
+color:#fff;
+padding:10px;
+text-align:center;
+font-weight:bold;
 }
 
 header{
-    background:#c40000;
-    color:white;
-    padding:20px;
-    text-align:center;
+background:#fff;
+padding:20px;
+text-align:center;
+border-bottom:3px solid #c40000;
 }
 
-header h1{
-    font-size:40px;
+.logo{
+font-size:42px;
+font-weight:bold;
+color:#c40000;
 }
 
 nav{
-    background:#333;
-    padding:12px;
-    text-align:center;
+background:#222;
+padding:15px;
+text-align:center;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+color:#fff;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
 }
 
-.banner{
-    background:white;
-    margin:15px;
-    padding:20px;
-    border-radius:10px;
+.hero{
+background:#fff;
+margin:15px;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 2px 10px rgba(0,0,0,.15);
 }
 
-.banner img{
-    width:100%;
-    border-radius:10px;
+.hero img{
+width:100%;
+height:400px;
+object-fit:cover;
 }
 
-.banner h2{
-    margin-top:15px;
-    color:#c40000;
+.hero-content{
+padding:20px;
 }
 
-.container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:15px;
-    padding:15px;
+.hero h1{
+color:#c40000;
+margin-bottom:10px;
+}
+
+.section-title{
+margin:20px 15px 10px;
+font-size:28px;
+color:#c40000;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:15px;
+padding:15px;
 }
 
 .card{
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+background:#fff;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card img{
-    width:100%;
+width:100%;
+height:180px;
+object-fit:cover;
 }
 
 .card h3{
-    padding:10px;
-    color:#c40000;
+padding:12px;
+color:#c40000;
 }
 
 .card p{
-    padding:0 10px 15px;
+padding:0 12px 15px;
 }
 
 footer{
-    background:#333;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:20px;
+background:#222;
+color:#fff;
+text-align:center;
+padding:30px;
+margin-top:20px;
 }
 </style>
-
 </head>
+
 <body>
 
+<div class="topbar">
+🔴 Últimas Notícias • Brasil • Mundo • Futebol • Tecnologia • Economia
+</div>
+
 <header>
-<h1>RedNews</h1>
-<p>As principais notícias do Brasil e do Mundo</p>
+<div class="logo">RedNews</div>
+<p>As principais notícias em um só lugar</p>
 </header>
 
 <nav>
-<a href="#">Início</a>
 <a href="#">Brasil</a>
-<a href="#">Esportes</a>
+<a href="#">Mundo</a>
+<a href="#">Futebol</a>
 <a href="#">Tecnologia</a>
+<a href="#">Economia</a>
 <a href="#">Entretenimento</a>
 </nav>
 
-<section class="banner">
-<img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="">
-<h2>Notícia em Destaque</h2>
-<p>Confira as principais notícias do dia com atualizações rápidas e informações completas.</p>
+<section class="hero">
+<img src="https://picsum.photos/1200/500" alt="">
+<div class="hero-content">
+<h1>Manchete Principal do Dia</h1>
+<p>Substitua este texto pela notícia mais importante do momento.</p>
+</div>
 </section>
 
-<div class="container">
+<h2 class="section-title">🇧🇷 Brasil</h2>
+<div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1495020689067-958852a7765e">
-<h3>Brasil</h3>
-<p>Últimas atualizações sobre política, economia e acontecimentos nacionais.</p>
+<img src="https://picsum.photos/400/250?1">
+<h3>Política</h3>
+<p>Atualize aqui com uma notícia nacional.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e">
-<h3>Esportes</h3>
-<p>Resultados dos jogos, transferências e notícias do futebol brasileiro.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
-<h3>Tecnologia</h3>
-<p>Novidades sobre inteligência artificial, celulares e inovação.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba">
-<h3>Entretenimento</h3>
-<p>Filmes, séries, celebridades e tudo que está bombando na internet.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2">
+<img src="https://picsum.photos/400/250?2">
 <h3>Economia</h3>
-<p>Mercado financeiro, investimentos e novidades econômicas.</p>
+<p>Atualize aqui com uma notícia econômica.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-<h3>Mundo</h3>
-<p>Os principais acontecimentos internacionais em tempo real.</p>
+<img src="https://picsum.photos/400/250?3">
+<h3>Cidades</h3>
+<p>Atualize aqui com notícias locais.</p>
+</div>
+
+</div>
+
+<h2 class="section-title">🌎 Mundo</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://picsum.photos/400/250?4">
+<h3>Internacional</h3>
+<p>Notícias internacionais em destaque.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?5">
+<h3>Mercado Global</h3>
+<p>Atualizações do cenário mundial.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?6">
+<h3>Eventos Mundiais</h3>
+<p>Principais acontecimentos globais.</p>
+</div>
+
+</div>
+
+<h2 class="section-title">⚽ Futebol</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://picsum.photos/400/250?7">
+<h3>Brasileirão</h3>
+<p>Resultados, classificação e destaques.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?8">
+<h3>Mercado da Bola</h3>
+<p>Transferências e negociações.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?9">
+<h3>Champions League</h3>
+<p>Notícias do futebol europeu.</p>
+</div>
+
+</div>
+
+<h2 class="section-title">💻 Tecnologia</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://picsum.photos/400/250?10">
+<h3>Inteligência Artificial</h3>
+<p>Novidades do setor tecnológico.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?11">
+<h3>Celulares</h3>
+<p>Lançamentos e análises.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?12">
+<h3>Internet</h3>
+<p>Tendências e novidades digitais.</p>
+</div>
+
+</div>
+
+<h2 class="section-title">🎬 Entretenimento</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://picsum.photos/400/250?13">
+<h3>Filmes</h3>
+<p>Lançamentos e bilheterias.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?14">
+<h3>Séries</h3>
+<p>Novidades dos streamings.</p>
+</div>
+
+<div class="card">
+<img src="https://picsum.photos/400/250?15">
+<h3>Celebridades</h3>
+<p>O que está acontecendo no entretenimento.</p>
 </div>
 
 </div>
 
 <footer>
-© 2026 RedNews - Todos os direitos reservados
+<h3>RedNews</h3>
+<p>Portal de notícias • Brasil • Mundo • Futebol • Tecnologia</p>
+<p>© 2026 RedNews</p>
 </footer>
 
 </body>
