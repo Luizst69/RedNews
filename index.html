@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedNews</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#e5e5e5;
+}
+
+header{
+    background:#c40000;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:40px;
+}
+
+nav{
+    background:#333;
+    padding:12px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+.banner{
+    background:white;
+    margin:15px;
+    padding:20px;
+    border-radius:10px;
+}
+
+.banner img{
+    width:100%;
+    border-radius:10px;
+}
+
+.banner h2{
+    margin-top:15px;
+    color:#c40000;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:15px;
+    padding:15px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:100%;
+}
+
+.card h3{
+    padding:10px;
+    color:#c40000;
+}
+
+.card p{
+    padding:0 10px 15px;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>RedNews</h1>
+<p>As principais notícias do Brasil e do Mundo</p>
+</header>
+
+<nav>
+<a href="#">Início</a>
+<a href="#">Brasil</a>
+<a href="#">Esportes</a>
+<a href="#">Tecnologia</a>
+<a href="#">Entretenimento</a>
+</nav>
+
+<section class="banner">
+<img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="">
+<h2>Notícia em Destaque</h2>
+<p>Confira as principais notícias do dia com atualizações rápidas e informações completas.</p>
+</section>
+
+<div class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495020689067-958852a7765e">
+<h3>Brasil</h3>
+<p>Últimas atualizações sobre política, economia e acontecimentos nacionais.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e">
+<h3>Esportes</h3>
+<p>Resultados dos jogos, transferências e notícias do futebol brasileiro.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<h3>Tecnologia</h3>
+<p>Novidades sobre inteligência artificial, celulares e inovação.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba">
+<h3>Entretenimento</h3>
+<p>Filmes, séries, celebridades e tudo que está bombando na internet.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2">
+<h3>Economia</h3>
+<p>Mercado financeiro, investimentos e novidades econômicas.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+<h3>Mundo</h3>
+<p>Os principais acontecimentos internacionais em tempo real.</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 RedNews - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
